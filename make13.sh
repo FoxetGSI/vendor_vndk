@@ -38,9 +38,4 @@ ln -s  /apex/com.android.vndk.v29/lib64 $systempath/lib64/vndk-sp-29
 ln -s  /apex/com.android.vndk.v28/lib64 $systempath/lib64/vndk-sp-28
 
 # Extract VNDK apex to system
-7z x -y $thispath/13/com.android.vndk.v28.7z -o$systempath/apex/ 2>/dev/null >> $systempath/zip.log
-7z x -y $thispath/13/com.android.vndk.v29.7z -o$systempath/apex/ 2>/dev/null >> $systempath/zip.log
-7z x -y $thispath/13/com.android.vndk.v30.7z -o$systempath/apex/ 2>/dev/null >> $systempath/zip.log
-7z x -y $thispath/13/com.android.vndk.v31.7z -o$systempath/apex/ 2>/dev/null >> $systempath/zip.log
-7z x -y $thispath/13/com.android.vndk.v32.7z -o$systempath/apex/ 2>/dev/null >> $systempath/zip.log
-rm -rf $systempath/zip.log
+7z x -y $thispath/13/apex_13.7z -o$systempath/apex/ -bso0 -bsp0
